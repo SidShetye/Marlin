@@ -1482,12 +1482,12 @@
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 195 //Customized Sid
 #define PREHEAT_1_TEMP_BED     50 //Customized Sid
-#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255 //Customized Sid
+#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255 //Customized Sid
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED     70 //Customized Sid
-#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255 //Customized Sid
+#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255 //Customized Sid
 
 /**
  * Nozzle Park
