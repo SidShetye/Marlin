@@ -506,7 +506,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -535,9 +535,15 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 50.71
-  #define DEFAULT_bedKi 9.88
-  #define DEFAULT_bedKd 173.43
+  // Sid: Per 'M303 E-1 C8 S90'
+  #define DEFAULT_bedKp 172.29
+  #define DEFAULT_bedKi 33.58
+  #define DEFAULT_bedKd 589.28
+
+  // Sid: Per 'M303 C5 E-1 S60 U' (5 iterations @ 60 degrees)
+  //#define DEFAULT_bedKp 103.85
+  //#define DEFAULT_bedKi 16.19
+  //#define DEFAULT_bedKd 443.98
 
 #endif // PIDTEMPBED
 
