@@ -564,7 +564,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200   //Customized Sid Shetye
+#define EXTRUDE_MAXLENGTH 450   //Customized Sid Shetye
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -959,7 +959,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, -8, 0 } //Customized Sid Shetye
+#define NOZZLE_TO_PROBE_OFFSET { -45, -8, -3.3 } //Customized Sid Shetye
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
