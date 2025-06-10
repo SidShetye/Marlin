@@ -65,6 +65,7 @@
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "(SidShetye, Ender-3)" // Who made the changes. //Customized Sid Shetye
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
+#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/Sid-2.1.2.5"
 
 /**
  * *** VENDORS PLEASE READ ***
