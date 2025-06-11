@@ -65,7 +65,7 @@
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "(SidShetye, Ender-3)" // Who made the changes. //Customized Sid Shetye
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/Sid-2.1.2.5"
+#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/2.1.2.5-SidEnder3-20250611"
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -686,13 +686,14 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_Kp_LIST {  27.67,  27.67 } //Customized Sid Shetye
-    #define DEFAULT_Ki_LIST {   2.36,   2.36 } //Customized Sid Shetye
-    #define DEFAULT_Kd_LIST {  80.96,  80.96 } //Customized Sid Shetye
+    #define DEFAULT_Kp_LIST {  22.32,  22.32 } //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Ki_LIST {   1.65,   1.65 } //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Kd_LIST {  75.43,  75.43 } //Customized Sid Shetye (tuned 2025/6/11)
   #else
-    #define DEFAULT_Kp  27.67    //Customized Sid Shetye
-    #define DEFAULT_Ki   2.36    //Customized Sid Shetye
-    #define DEFAULT_Kd  80.96    //Customized Sid Shetye
+    // Sid: Per `M303 E0 S245 C8`
+    #define DEFAULT_Kp  22.32    //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Ki   1.65    //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Kd  75.43    //Customized Sid Shetye (tuned 2025/6/11)
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -777,10 +778,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-  // Sid: Per 'M303 E-1 C8 S90'
-  #define DEFAULT_bedKp 172.29 // Customized Sid Shetye
-  #define DEFAULT_bedKi 33.58  // Customized Sid Shetye
-  #define DEFAULT_bedKd 589.28 // Customized Sid Shetye 
+  // Sid: Per 'M303 E-1 S85 C8'
+  #define DEFAULT_bedKp 217.31 // Customized Sid Shetye (tuned 2025/6/11)
+  #define DEFAULT_bedKi 42.44  // Customized Sid Shetye (tuned 2025/6/11)
+  #define DEFAULT_bedKd 741.75 // Customized Sid Shetye  (tuned 2025/6/11)
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #else
@@ -1514,7 +1515,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -45, -8, -3.1 } //Customized Sid Shetye
+#define NOZZLE_TO_PROBE_OFFSET { -45, -8, -3.5 } //Customized Sid Shetye
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
