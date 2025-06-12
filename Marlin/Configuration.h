@@ -65,7 +65,7 @@
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "(SidShetye, Ender-3)" // Who made the changes. //Customized Sid Shetye
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/2.1.2.5-SidEnder3-20250611"
+#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/2.1.2.5-SidEnder3-20250612"
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -1924,16 +1924,16 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-#define RESTORE_LEVELING_AFTER_G28  //Customized Sid Shetye
-//#define ENABLE_LEVELING_AFTER_G28
+//#define RESTORE_LEVELING_AFTER_G28  
+#define ENABLE_LEVELING_AFTER_G28   //Customized Sid Shetye
 
 /**
  * Auto-leveling needs preheating
  */
-//#define PREHEAT_BEFORE_LEVELING
+#define PREHEAT_BEFORE_LEVELING //Customized Sid Shetye
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
-  #define LEVELING_NOZZLE_TEMP 120   // (°C) Only applies to E0 at this time
-  #define LEVELING_BED_TEMP     50
+  #define LEVELING_NOZZLE_TEMP 200   // (°C) Only applies to E0 at this time //Customized Sid Shetye
+  #define LEVELING_BED_TEMP     60    //Customized Sid Shetye
 #endif
 
 /**
