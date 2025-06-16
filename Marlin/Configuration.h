@@ -686,14 +686,14 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_Kp_LIST {  22.32,  22.32 } //Customized Sid Shetye (tuned 2025/6/11)
-    #define DEFAULT_Ki_LIST {   1.65,   1.65 } //Customized Sid Shetye (tuned 2025/6/11)
-    #define DEFAULT_Kd_LIST {  75.43,  75.43 } //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Kp_LIST {  26.70,  26.70 } //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Ki_LIST {   2.42,   2.42 } //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Kd_LIST {  73.69,  73.69 } //Customized Sid Shetye (tuned 2025/6/11)
   #else
     // Sid: Per `M303 E0 S245 C8`
-    #define DEFAULT_Kp  22.32    //Customized Sid Shetye (tuned 2025/6/11)
-    #define DEFAULT_Ki   1.65    //Customized Sid Shetye (tuned 2025/6/11)
-    #define DEFAULT_Kd  75.43    //Customized Sid Shetye (tuned 2025/6/11)
+    #define DEFAULT_Kp  26.70    //Customized Sid Shetye (tuned 2025/6/12)
+    #define DEFAULT_Ki   2.42    //Customized Sid Shetye (tuned 2025/6/12)
+    #define DEFAULT_Kd  73.69    //Customized Sid Shetye (tuned 2025/6/12)
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
