@@ -65,7 +65,7 @@
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "(SidShetye, Ender-3)" // Who made the changes. //Customized Sid Shetye
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
-#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/2.1.2.5-SidEnder3-20250618"
+#define SOURCE_CODE_URL "https://github.com/SidShetye/Marlin/tree/2.1.2.5-SidEnder3-20250621"
 
 /**
  * *** VENDORS PLEASE READ ***
@@ -1200,7 +1200,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.12, 79.74, 402.12, 100.17 } // Customized Sid Shetye (tuned 2025/6/20)
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
